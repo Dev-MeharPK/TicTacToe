@@ -19,7 +19,6 @@
         android:gravity="center">
 
         <TextView
-            android:id="@+id/tvAppName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tic Tac Toe"
@@ -29,7 +28,6 @@
             android:gravity="center"/>
 
         <TextView
-            android:id="@+id/tvVersion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Version: 1.0"
@@ -39,7 +37,6 @@
             android:layout_marginTop="5dp"/>
 
         <TextView
-            android:id="@+id/tvDeveloper"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Developed by: DevMeharPk"
@@ -50,7 +47,6 @@
             android:layout_marginTop="10dp"/>
 
         <TextView
-            android:id="@+id/tvAboutDesc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="A fun and strategic Tic Tac Toe game with an intuitive interface. Enjoy playing!"

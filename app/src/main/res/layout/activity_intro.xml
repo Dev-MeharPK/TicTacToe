@@ -6,7 +6,7 @@
     android:background="@drawable/gradient_bg"
     android:padding="30dp">
 
-    <!-- Game Title with Glowing Effect -->
+    <!-- Game Title -->
     <TextView
         android:id="@+id/tvGameTitle"
         android:layout_width="wrap_content"
@@ -35,9 +35,9 @@
         android:elevation="8dp"
         android:layout_below="@id/tvGameTitle"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"/>
+        android:layout_marginTop="150dp"/>
 
-    <!-- Help Button (Below Start Game) -->
+    <!-- Help Button -->
     <Button
         android:id="@+id/btnHelp"
         android:layout_width="200dp"
@@ -52,7 +52,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"/>
 
-    <!-- About Button (Below Help, Adjusted Spacing) -->
+    <!-- About Button -->
     <Button
         android:id="@+id/btnAbout"
         android:layout_width="200dp"
@@ -66,4 +66,20 @@
         android:layout_below="@id/btnHelp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"/>
+
+    <!-- Exit Button -->
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Exit"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_style"
+        android:elevation="6dp"
+        android:layout_below="@id/btnAbout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
 </RelativeLayout>
