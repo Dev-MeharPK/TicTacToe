@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    android:padding="20dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvHelpTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How to Play"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="50dp"
+        android:shadowColor="#FFEB3B"
+        android:shadowRadius="15"/>
+
+    <!-- Game Instructions -->
+    <LinearLayout
+        android:id="@+id/helpContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_box"
+        android:padding="30dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@id/tvHelpTitle"
+        android:layout_centerHorizontal="true"
+        android:elevation="8dp">
+
+        <TextView
+            android:id="@+id/tvHelpContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎮 The game is played on a 3x3 grid.\n\n❌ Player 1 (X) and ⭕ Player 2 (O) take turns marking a square.\n\n🏆 The first player to get 3 in a row (horizontal, vertical, or diagonal) wins!\n\n🤝 If all squares are filled and no player wins, it's a draw."
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Back"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_style"
+        android:elevation="6dp"
+        android:layout_below="@id/helpContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+</RelativeLayout>

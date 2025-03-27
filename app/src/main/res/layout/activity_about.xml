@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/gradient_bg">
+
+    <!-- App Info Card -->
+    <LinearLayout
+        android:id="@+id/infoCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:padding="20dp"
+        android:background="@drawable/card_bg"
+        android:orientation="vertical"
+        android:elevation="8dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tic Tac Toe"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version: 1.0"
+            android:textSize="16sp"
+            android:textColor="#EEEEEE"
+            android:gravity="center"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/tvDeveloper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Developed by: DevMeharPk"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFD700"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tvAboutDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A fun and strategic Tic Tac Toe game with an intuitive interface. Enjoy playing!"
+            android:textSize="16sp"
+            android:textColor="#DDDDDD"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"/>
+
+        <!-- GitHub Button -->
+        <Button
+            android:id="@+id/btnGitHub"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:text="View on GitHub"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_style"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:text="Back"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_style"
+        android:layout_below="@id/infoCard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"/>
+</RelativeLayout>
